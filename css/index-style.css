@@ -112,17 +112,17 @@ body{
 }
 .home .home-content a{
     display: inline-block;
-    background: rgb(20, 20, 20);
+    background: #1C282E;
     color: rgb(255, 255, 255);
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(41,41,41);
+    border: 2px solid #308cf5;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: rgb(41, 41, 41);
+    color: #273F4B;
     background: none;
 }
 /* style for about section */
@@ -163,11 +163,50 @@ section{
     background: #CCD3D9;
     transform: translateX(-50%);
 }
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
 .about .about-content .left img{
     height: 500px;
     width: 400px;
     object-fit: cover;
     border-radius: 10px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;;
+}
+.about .about-content .right .text span{
+    color:#273F4B;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #1C282E;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #273F4B;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color:#1C282E;
+    background: none;
 }
 
 /* start of responsive media query */
@@ -216,11 +255,11 @@ section{
     }
     .home .home-content .text-2{
         font-size: 70px;
-        color: rgb(20, 20, 20);
+        color: #CCD3D9;
     }
     .home .home-content .text-3{
         font-size: 40px;
-        color: rgb(20, 20, 20);
+        color: #CCD3D9;
     }
     
     .home .home-content a{
@@ -234,11 +273,11 @@ section{
     }
     .home .home-content .text-2{
         font-size: 60px;
-        color: rgb(20, 20, 20);
+        color: #CCD3D9;
     }
     .home .home-content .text-3{
         font-size: 32px;
-        color: rgb(20, 20, 20);
+        color: #CCD3D9;
     }
     .home .home-content a{
         font-size: 20px;
@@ -249,10 +288,10 @@ section{
 @media (max-width: 500px){
     .home .home-content .text-2{
         font-size: 50px;
-        color: rgb(20, 20, 20);
+        color: #CCD3D9;
     }
     .home .home-content .text-3{
         font-size: 27px;
-        color: rgb(20, 20, 20);
+        color: #CCD3D9;
     }
 }
