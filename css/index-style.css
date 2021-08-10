@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    background-color: #CCD3D9;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -21,7 +24,7 @@
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(41, 41, 41); 
+    background: #1C282E; 
 }
 .navbar .max-width{
     display:flex;
@@ -30,36 +33,36 @@
 }
 .navbar .logo a{
     font-size: 30px;
-    color: #fff;
+    color: #CCD3D9;
     font-weight: 500;
 }
 .navbar .logo a span{
-    color: rgb(41, 41, 41);
+    color: #1C282E;
     transition: all 0.3s ease; 
 }
 .navbar.sticky .logo a span{
-    color:rgb(255, 255, 255);
+    color:#CCD3D9;
 }
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
 .navbar .menu li a{
-    color: #fff;
+    color: #CCD3D9;
     font-size: 18px;
     font-weight: 300;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(41, 41, 41);
+    color: #1C282E;
 }
 .navbar.sticky .menu li a:hover{
-    color: rgb(131, 131, 131);
+    color: #273F4B;
 }
 /* style for menu-btn */
 .menu-btn{
-    color: rgb(255, 255, 255);
+    color: #CCD3D9;
     font-size: 23px ;
     cursor: pointer;
     display: none;
@@ -68,11 +71,11 @@
 /* style for gome section */
 .home{
     display: flex;
-    background: url("../img/hands.jpg") no-repeat center;
+    background: url("../img/banner_final.jpg") no-repeat center;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    color: #fff;
+    color: #CCD3D9;
     min-height: 500px;
     font-family: 'Rubik', sans-serif;
 }
@@ -82,26 +85,26 @@
 }
 .home .home-content .text-1{
     font-size: 27px;
-    color: rgb(20, 20, 20);
+    color: #CCD3D9;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
-    color: rgb(20, 20, 20);
+    color: #CCD3D9;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
-    color: rgb(20, 20, 20);
+    color: #CCD3D9;
 }
 .home .home-content .text-3 span{
-    color: rgb(100, 100, 100);
+    color: #308cf5;
     font-weight: 500;
 }
 .home .home-content .text-4{
     font-size: 25px;
-    color: rgb(20, 20, 20);
+    color: #CCD3D9;
 }
 .home .home-content .text-4 span{
     color: rgb(36, 86, 224);
@@ -136,6 +139,7 @@ section{
     font-weight: 500;
     margin-bottom: 50px;
     padding-bottom: 20px;
+    color: #273F4B;
     font-family: 'Rubik', sans-serif;
 }
 .about .title::before{
@@ -145,7 +149,7 @@ section{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: rgb(0, 0, 0);
+    background: #273F4B;
     transform: translateX(-50%);
 }
 .about .title::after{
@@ -154,9 +158,9 @@ section{
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: rgb(41, 41, 41);
+    color: #273F4B;
     padding: 5px;
-    background: rgb(255, 255, 255);
+    background: #CCD3D9;
     transform: translateX(-50%);
 }
 .about .about-content .left img{
