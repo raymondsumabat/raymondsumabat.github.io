@@ -316,23 +316,25 @@ section .title::after{
     content: "";
     position: absolute;
     height: 100%;
+    width: 0%;
     left: 0;
     top: 0;
     background:#0e161a;
+    transition: all 0.3s ease;
 }
-.skills-content .right .java::before{
+.skills-content .right:hover .java::before{
     width: 70%;
 }
-.skills-content .right .python::before{
+.skills-content .right:hover .python::before{
     width: 50%;
 }
-.skills-content .right .php::before{
+.skills-content .right:hover .php::before{
     width: 60%;
 }
-.skills-content .right .css::before{
+.skills-content .right:hover .css::before{
     width: 60%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right:hover .mysql::before{
     width: 70%;
 }
 
