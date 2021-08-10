@@ -322,21 +322,6 @@ section .title::after{
     background:#0e161a;
     transition: all 0.3s ease;
 }
-.skills-content .right:hover .java::before{
-    width: 70%;
-}
-.skills-content .right:hover .python::before{
-    width: 50%;
-}
-.skills-content .right:hover .php::before{
-    width: 60%;
-}
-.skills-content .right:hover .css::before{
-    width: 60%;
-}
-.skills-content .right:hover .mysql::before{
-    width: 70%;
-}
 
 /* start of responsive media query */
 @media (max-width: 1300px){
