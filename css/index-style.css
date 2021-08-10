@@ -129,7 +129,7 @@ body{
 section{
     padding: 100px 0;
 }
-.about{
+.about, .projects{
     font-family: 'Rubik', sans-serif;
 }
 .about .title{
@@ -209,10 +209,19 @@ section{
     background: none;
 }
 
+/* style for projects section */
+
+
 /* start of responsive media query */
-@media (max-width: 1104px){
+@media (max-width: 1300px){
     .home .max-width{
         margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
     }
 }
 @media (max-width: 991px){
@@ -261,10 +270,23 @@ section{
         font-size: 40px;
         color: #CCD3D9;
     }
-    
     .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .max-width{
+        max-width: 800px;
     }
 }
 @media (max-width: 690px){
