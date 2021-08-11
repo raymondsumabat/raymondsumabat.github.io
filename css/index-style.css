@@ -129,7 +129,7 @@ body{
 section{
     padding: 100px 0;
 }
-.about, .showcase, .skills{
+.about, .showcase, .skills, .projects{
     font-family: 'Rubik', sans-serif;
 }
 .about .about-content,
@@ -215,14 +215,16 @@ section .title::after{
 }
 
 /* style for showcase section */
-.showcase{
+.showcase, .projects{
     color: #CCD3D9;
     background: #080c0e;
 }
-.showcase .title{
+.showcase .title,
+.projects .title{
     color: #CCD3D9;
 }
-.showcase .title::before{
+.showcase .title::before,
+.projects .title::before{
     background: #CCD3D9;
 }
 .showcase .title::after{
@@ -336,6 +338,70 @@ section .title::after{
 }
 .skills-content .right:hover .mysql::before{
     width: 70%;
+}
+
+/* style for projects section */
+.projects .title::after{
+    background: #080c0e;
+    color: #CCD3D9;
+    content: "My portfolio"
+}
+.projects .carousel .card{
+    background: #0e161a;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+    background: #1C282E;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #273F4B;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #CCD3D9;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #273F4B!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #1C282E!important;
 }
 
 /* start of responsive media query */
