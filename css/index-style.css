@@ -172,7 +172,7 @@ section .title::after{
 }
 /* style for about section */
 .about .title::after{
-    content: "My Introduction";
+    content: "My Intro";
 }
 .about .about-content .left{
     width: 45%;
@@ -446,10 +446,10 @@ section .title::after{
     .navbar .menu.active{
         left: 0;
     }
-    .navbar .menu .li{
+    .navbar .menu li{
         display: block;
     }
-    .navbar .menu .li a{
+    .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
@@ -485,9 +485,9 @@ section .title::after{
         width: 100%;
         margin-bottom: 35px
     }
-    .max-width{
+    /* .max-width{
         max-width: 800px;
-    }
+    } */
 }
 @media (max-width: 690px){
     .max-width{
